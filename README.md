@@ -22,6 +22,14 @@ SECRET=xxxxxxxxxxxxxxx
 
 ## ローカルでの実行
 
+### Dockerを立ち上げる
+
+```bash
+$ docker-compose up -d
+```
+
+### アプリケーション起動
+
 ```bash
 $ npm run dev
 ```
