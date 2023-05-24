@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## NextAuth 素振り
 
-## Getting Started
+下記を元に構築したけど appディレクトリに対応していなかった。
 
-First, run the development server:
+- [【NextAuth.js 入門】認証機能から認証情報によるページの表示制御を学ぶ（Next.js & Typescript）](https://zenn.dev/farstep/books/7a6eb67dd3bf1f)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+なので、下記記事を参考にしつつ、appディレクトリに対応させた。
+
+- [Next.js v13でNextAuth v4を動かせた話](https://zenn.dev/ayaextech_fill/articles/next13_nextauth_googlelogin_movie)
+
+## 環境変数
+
+基本的に [【NextAuth.js 入門】認証機能から認証情報によるページの表示制御を学ぶ（Next.js & Typescript）](https://zenn.dev/farstep/books/7a6eb67dd3bf1f) で指示されている内容を反映させる。
+
+```dotenv
+DATABASE_URL=xxxxxxxxxxxxxxx
+GITHUB_ID=xxxxxxxxxxxxxxx
+GITHUB_SECRET=xxxxxxxxxxxxxxx
+NEXTAUTH_URL=xxxxxxxxxxxxxxx
+SECRET=xxxxxxxxxxxxxxx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ローカルでの実行
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+$ npm run dev
+```
